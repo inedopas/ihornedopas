@@ -53,6 +53,8 @@
   margin: 0 auto; /* Блок по центру */
   width: 1400px;
   margin-top: 20px;
+  /*border: 1px solid white;*/
+  overflow: auto; /* Якщо вміст блоку виходить за межі, батьківському блоку потрібно overflow: hidden*/
   }
 
 #owner{
@@ -76,13 +78,15 @@
       }
 
 
-#rightcol {
+aside{
     border-radius: 10px;
     border: 2px solid black;
     padding: 20px;
     float: right; /* Обтекание по левому краю */
+  /*position: fixed;*/
     width: 330px; /* Ширина правой колонки */
     background: rgba(87, 230, 218, 0.4);
+
    }
 
 #content {
@@ -123,4 +127,16 @@ body{
 
 .mult{
   font-size: 50px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown:hover>.dropdown-menu {
+  display: block;
+
+}
+.dropdown:hover>.dropdown-content{
+   margin-top: 0px;
 }
