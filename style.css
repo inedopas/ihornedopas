@@ -3,6 +3,10 @@
  src: url(fonts/lobster.ttf); /* Путь к файлу со шрифтом */
 }
 
+#carousel{
+margin-bottom: 20px;
+
+}
 #IAM{
   float:right;
   position: top;
